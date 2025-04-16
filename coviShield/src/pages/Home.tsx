@@ -78,7 +78,7 @@ const Home = () => {
                     href="https://www.mohfw.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 underline ml-1"
+                    className="text-blue-400 underline ml-1"
                 >
                     Ministry of Health and Family Welfare, India
                 </a>.

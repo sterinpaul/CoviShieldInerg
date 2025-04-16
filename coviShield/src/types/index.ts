@@ -14,7 +14,5 @@ export interface RootState {
     data: CovidData[];
     currentData: CovidData[];
     selectedState: string;
-    loading: boolean;
-    error: string | null;
   };
 }
