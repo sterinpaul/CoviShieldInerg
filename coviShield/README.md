@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
+# 🦠 COVID-19 India Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive React application to visualize real-time COVID-19 data across Indian states.  
+It features a map interface, searchable state-wise statistics, sortable data tables, and charts for better understanding of pandemic trends.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📊 **Interactive Dashboard:** View total cases, active cases, recoveries, and deaths.
+- 🗺️ **Map View:** Visualize COVID-19 data across states of India.
+- 🔎 **State-wise Filter:** Select any Indian state to view specific details.
+- 📈 **Dynamic Pie Chart:** Visualize distribution of cases in selected state.
+- 🧮 **Sortable Data Table:** Quickly sort states by cases, recoveries, or deaths.
+- 📱 **Responsive Design:** Optimized for desktop, tablet, and mobile views.
+- ⚡ **Fast Performance:** Lightweight and smooth user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend:** React.js, TypeScript
+- **Styling:** Tailwind CSS, Ant Design
+- **Map:** React-Leaflet
+- **Charts:** React-Plotly.js
+- **Table:** Ant Design Table
+- **Global state:** Redux
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
